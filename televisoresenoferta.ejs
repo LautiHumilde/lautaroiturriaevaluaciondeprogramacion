@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>electrodomesticos en venta</p>
+    <p>
+
+    </p>
+    <div>
+        <ul>
+            <% for(var objeto of electrodomesticos){ %>
+                <li>
+                    <form method ='POST'> nombre del producto : <%= objeto.tipo %><p> </p></form>
+                    <form method ='POST'> origen del producto : <%= objeto.origen %><p> </p></form>
+                    <form method ='POST'> presio del producto : <%= objeto.presio %><p> </p></form>
+                    <form method ='POST'> stock del producto : <%= objeto.stock %></form>
+                    <p> </p>
+                    <p> </p>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</body>
+</html>
